@@ -11,10 +11,14 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>eda</td>
-			<td>eda</td>
-			<td>eda</td>
+		<tr *ngFor="let book of data">
+			<td>{{book.isbn}}</td>
+			<td>{{book.bookName}}</td>
+			<td>{{book.authorName}}</td>
+			<td>{{book.publishDate}}</td>
+			<td>{{book.language}}</td>
+			<td>{{book.editorialName}}</td>
+			<td><input type="button" value="Delete" (click)="onDeleteClick(book)"></td>
 		</tr>
 	</tbody>
 </table>

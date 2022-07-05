@@ -1,0 +1,25 @@
+.crud-form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: 100px;
+}
+
+.crud-form > div {
+	display: flex;
+}
+
+.crud-form > div > span {
+	flex-grow: 1;
+	padding: 10px;
+}
+
+.crud-form > div > input {
+	margin: 10px;
+}
+
+.crud-submit{
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 10px;
+}
