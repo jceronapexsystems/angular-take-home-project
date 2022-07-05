@@ -1,13 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-export class BookModel {
-  isbn!: string;
-  bookName!: string;
-  authorName!: string;
-  publishDate!: Date;
-  language!: string;
-  editorialName!: string;
-}
+import { BookModel } from 'src/app/models/book-model';
+import { BookServiceService } from 'src/app/services/book-service.service';
 
 @Component({
   selector: 'app-crud-table-component',
@@ -16,26 +9,12 @@ export class BookModel {
 })
 export class CrudTableComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private bookService: BookServiceService) { }
 
   data!: BookModel[];
 
   ngOnInit(): void {
-    this.data = [{
-      authorName: "William Shakespeare",
-      bookName: "Romeo and Juliet",
-      editorialName: "Mirahadas editorial",
-      isbn: "1",
-      language: "en-US",
-      publishDate: new Date('1597-01-01')
-    }, {
-      authorName: "Shakespierre",
-      bookName: "Romeo and Julieta",
-      editorialName: "Errata Naturae editorial",
-      isbn: "2",
-      language: "en-MX",
-      publishDate: new Date('1597-01-01')
-    }];
+    this.data = this.bookService.getList();
   }
 
   onDeleteClick(item: BookModel) {
