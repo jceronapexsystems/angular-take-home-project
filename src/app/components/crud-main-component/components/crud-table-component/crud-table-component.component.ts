@@ -39,7 +39,7 @@ export class CrudTableComponentComponent implements OnInit {
   }
 
   onDeleteClick(item: BookModel) {
-    console.log(item);
+    alert('Not implemented');
   }
 
 }

@@ -13,7 +13,7 @@ export class CrudFormComponentComponent implements OnInit {
   }
 
   onSubmitClick() {
-    console.log('eda');
+    alert('Not implemented');
   }
 
 }
