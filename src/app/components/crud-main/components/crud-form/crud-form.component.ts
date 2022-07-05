@@ -4,11 +4,11 @@ import { EditorialModel } from 'src/app/models/editorial-model';
 import { LanguageModel } from 'src/app/models/language-model';
 
 @Component({
-  selector: 'app-crud-form-component',
-  templateUrl: './crud-form-component.component.html',
-  styleUrls: ['./crud-form-component.component.css']
+  selector: 'app-crud-form',
+  templateUrl: './crud-form.component.html',
+  styleUrls: ['./crud-form.component.css']
 })
-export class CrudFormComponentComponent implements OnInit {
+export class CrudFormComponent implements OnInit {
   languages: LanguageModel[];
   authors: AuthorModel[];
   editorials: EditorialModel[];
@@ -54,5 +54,4 @@ export class CrudFormComponentComponent implements OnInit {
   onSubmitClick() {
     alert('Not implemented');
   }
-
 }

@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { BookModel } from 'src/app/models/book-model';
-import { BookServiceService } from 'src/app/services/book-service.service';
+import { BookService } from 'src/app/services/book.service';
 
 @Component({
-  selector: 'app-crud-table-component',
-  templateUrl: './crud-table-component.component.html',
-  styleUrls: ['./crud-table-component.component.css']
+  selector: 'app-crud-table',
+  templateUrl: './crud-table.component.html',
+  styleUrls: ['./crud-table.component.css']
 })
-export class CrudTableComponentComponent implements OnInit {
-
-  constructor(private bookService: BookServiceService) { }
+export class CrudTableComponent implements OnInit {
+  constructor(private bookService: BookService) { }
 
   data!: BookModel[];
 
@@ -26,5 +25,4 @@ export class CrudTableComponentComponent implements OnInit {
     // todo: Implement
     alert('Not implemented');
   }
-
 }

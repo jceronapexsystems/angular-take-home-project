@@ -4,9 +4,7 @@ import { BookModel } from '../models/book-model';
 @Injectable({
   providedIn: 'root'
 })
-export class BookServiceService {
-
-  constructor() { }
+export class BookService {
 
   public getList(): BookModel[] {
     // todo: remove hardcoded values and get it from API
