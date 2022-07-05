@@ -1,7 +1,7 @@
 <div class="crud-form">
 	<div class="crud-input">
 		<span>ISBN:</span>
-		<input type="text"/>
+		<input type="text" />
 	</div>
 
 	<div class="crud-input">
@@ -11,7 +11,11 @@
 
 	<div class="crud-input">
 		<span>Author:</span>
-		<input type="text" />
+		<select>
+			<option *ngFor="let option of authors">
+				{{option.name}}
+			</option>
+		</select>
 	</div>
 
 	<div class="crud-input">
@@ -21,12 +25,20 @@
 
 	<div class="crud-input">
 		<span>Language:</span>
-		<input type="text" />
+		<select>
+			<option *ngFor="let option of languages">
+				{{option.value}}
+			</option>
+		</select>
 	</div>
 
 	<div class="crud-input">
 		<span>Editorial:</span>
-		<input type="text" />
+		<select>
+			<option *ngFor="let option of editorials">
+				{{option.name}}
+			</option>
+		</select>
 	</div>
 
 	<div class="crud-input">

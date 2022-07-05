@@ -16,6 +16,13 @@
 
 .crud-form > div > input {
 	margin: 10px;
+	width: 50%;
+}
+
+.crud-form > div > select {
+	margin: 10px;
+	flex-grow: 1;
+	min-width: 60%;
 }
 
 .crud-submit{
