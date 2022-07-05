@@ -18,6 +18,12 @@ export class CrudTableComponentComponent implements OnInit {
   }
 
   onDeleteClick(item: BookModel) {
+    // todo: Implement
+    alert('Not implemented');
+  }
+
+  onUpdateClick(item: BookModel) {
+    // todo: Implement
     alert('Not implemented');
   }
 

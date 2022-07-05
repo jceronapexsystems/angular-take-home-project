@@ -18,7 +18,10 @@
 			<td>{{book.publishDate}}</td>
 			<td>{{book.language}}</td>
 			<td>{{book.editorialName}}</td>
-			<td><input type="button" value="Delete" (click)="onDeleteClick(book)"></td>
+			<td>
+				<input type="button" value="Delete" (click)="onDeleteClick(book)">
+				<input type="button" value="Update" (click)="onUpdateClick(book)">
+			</td>
 		</tr>
 	</tbody>
 </table>
