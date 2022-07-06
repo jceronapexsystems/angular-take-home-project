@@ -11,16 +11,17 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr *ngFor="let book of books">
-			<td>{{book.isbn}}</td>
-			<td>{{book.bookName}}</td>
-			<td>{{book.authorName}}</td>
-			<td>{{book.publishDate}}</td>
-			<td>{{book.language}}</td>
-			<td>{{book.editorialName}}</td>
+		<!-- TODO: Fill the table -->
+		<tr>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td></td>
 			<td>
-				<input type="button" value="Delete" (click)="onDeleteClick(book)">
-				<input type="button" value="Update" (click)="onUpdateClick(book)">
+				<input type="button" value="Delete" (click)="onDeleteClick(books[0])">
+				<input type="button" value="Update" (click)="onUpdateClick(books[0])">
 			</td>
 		</tr>
 	</tbody>
