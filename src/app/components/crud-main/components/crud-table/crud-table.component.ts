@@ -10,10 +10,10 @@ import { BookService } from 'src/app/services/book.service';
 export class CrudTableComponent implements OnInit {
   constructor(private bookService: BookService) { }
 
-  data!: BookModel[];
+  books!: BookModel[];
 
   ngOnInit(): void {
-    this.data = this.bookService.getList();
+    this.books = this.bookService.getList();
   }
 
   onDeleteClick(item: BookModel) {
