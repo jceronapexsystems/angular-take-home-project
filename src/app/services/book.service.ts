@@ -7,7 +7,7 @@ import { BookModel } from '../models/book-model';
 export class BookService {
 
   public getList(): BookModel[] {
-    // todo: remove hardcoded values and get it from API
+    // TODO: remove hardcoded values and get it from API
     return [{
       authorName: "William Shakespeare",
       bookName: "Romeo and Juliet",
@@ -26,14 +26,14 @@ export class BookService {
   }
 
   public create(model: BookModel) {
-    // todo: you must implement this part
+    // TODO: you must implement this part
   }
 
   public delete(isbn: string) {
-    // todo: you must implement this part
+    // TODO: you must implement this part
   }
 
   public update(model: BookModel) {
-    // todo: you must implement this part
+    // TODO: you must implement this part
   }
 }
