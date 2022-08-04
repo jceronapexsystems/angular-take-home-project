@@ -5,7 +5,7 @@ import { BookService } from 'src/app/services/book.service';
 @Component({
   selector: 'app-crud-table',
   templateUrl: './crud-table.component.html',
-  styleUrls: ['./crud-table.component.css']
+  styleUrls: []
 })
 export class CrudTableComponent implements OnInit {
   constructor(private bookService: BookService) { }
